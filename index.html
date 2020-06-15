@@ -1,12 +1,4 @@
 <script>
-<!--
-/*
-Random link button- By JavaScript Kit (http://javascriptkit.com)
-Over 300+ free scripts!
-This credit MUST stay intact for use
-*/
-
-//specify random links below. You can have as many as you want
 var randomlinks=new Array()
 
 randomlinks[0]="http://freewarejava.com"
@@ -18,11 +10,47 @@ randomlinks[4]="http://www.geocities.com"
 function randomlink(){
 window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 }
-//-->
 </script>
-<form method="post">
-<p><input type="button" name="B1" value="Random Link >>" onclick="randomlink()"></p> </form>
 
-<!--Uncomment below to use a regular text link instead
-<a href="javascript:randomlink()">Random Link</a>
--->
+<style>
+body {
+  background-image: url('https://external-preview.redd.it/sPro-Ou61Ce449J5D_A0JgUx08QPFfDFhOuc2UnRpTw.png?auto=webp&s=196697d0f94392e45107c701472f329ee8ddc604');
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 60px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button3 {
+  background-color: transparent; 
+  color: white; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+#divElement{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+</style>
+<div id='divElement'>
+<a href="javascript:randomlink()" class="button button3">HERMES!! DONT PRESS THAT BUTTON!</a>
+</div>
+
